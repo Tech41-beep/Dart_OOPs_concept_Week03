@@ -47,12 +47,13 @@ class Bank {
     final String _name;
     final List<BankAccount> _accounts = [];
     
-    // return unmodifiable view of the account
-    List<BankAccount> get accounts => List.unmodifiable(_accounts);
-    //construtor
+     //construtor
     Bank({required String name}) : _name = name;
     String get name = > _name; 
 
+    // return unmodifiable view of the account
+    List<BankAccount> get accounts => List.unmodifiable(_accounts);
+   
     BankAccount createAccount({
       
       required int accountId,
